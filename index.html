@@ -14,8 +14,8 @@
   var grid;
   var columns = [
     {id: "track", name: "Track", field: "track"},
-    {id: "artist", name: "Artist", field: "artist"},
-    {id: "number", name: "Q Number", field: "number"},
+    {id: "artist", name: "Artist", field: "artist", sortable:true},
+    {id: "number", name: "Q Number", field: "number", sortable:true},
     {id: "selector", name: "Selector", field: "selector"},
     {id: "group", name: "Group", field: "group"},
     {id: "played", name: "Played", field: "played"}
@@ -26,9 +26,31 @@
     enableColumnReorder: false
   };
 
-  $(function () {
-      grid = new Slick.Grid("#myGrid", data, columns, options);
-  })
+    $(function () {
+        grid = new Slick.Grid("#myGrid", data, columns, options);
+        grid.onSort.subscribe(function(e, args) {
+            
+        field = args.sortCol.field;
+        data.sort(function(a, b){
+            var result = 
+                a[field] > b[field] ? 1 :
+                a[field] < b[field] ? -1 :
+                0
+            ; 
+
+            return args.sortAsc ? result : -result;
+
+        });
+        
+        grid.setData(data);
+        grid.updateRowCount();
+        grid.render();
+    
+    });
+      
+  });
+            
+  
 </script>
 </body>
 </html>
