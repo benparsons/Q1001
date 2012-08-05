@@ -8,16 +8,30 @@ function addSingleArtistList(trackList, artistName, selector, group) {
   }
 }
 
+function addMultipleArtistList(trackList, selector, group) {
+  for (item in trackList) {
+    data.push({track: trackList[item][0], artist: trackList[item][1], number:qnumber, selector:selector, group:group});
+    qnumber++;
+  }
+    
+}
+
 // P66
 addSingleArtistList(["Golden Slumbers", "Sexy Sadie", "For No One", "Magical Mystery Tour", "Cry Baby Cry",
   "Taxman", "Strawberry Fields Forever", "Paperback Writer", "Here Comes The Sun", "Carry That Weight"],
   "The Beatles", "Nicky Wire", "The Beatles")
-/*
+
 // P67
-var dangermouse = [
-  ["One of these Days", "Pink Floyd"]
-  ];
-for (item in dangermouse) {
-    data.push({track});
-}
-*/
+addMultipleArtistList([
+  ["One of these Days", "Pink Floyd"],
+  ["Little Wing", "The Jimi Hendrix Experience"],
+  ["There Is An End", "The Greenhornes"],
+  ["Wars Of Armageddon", "Funkadelic"],
+  ["I Put A Spell On You", "Screamin' Jay Hawkins"],
+  ["Hang On To A Dream", "Gandalf"],
+  ["Remember (Walking In The Sand)", "The Shangri-Las"],
+  ["Helter Skelter", "The Beatles"],
+  ["I Believe To My Soul", "The Animals"],
+  ["Only Shallow", "My Bloody Valentine"]
+  ], "Danger Mouse", "My Playlist");
+
