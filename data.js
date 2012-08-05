@@ -64,7 +64,7 @@ addMultipleArtistList([
 addMultipleArtistList([
   ["Kids","MGMT"],
   ["Oi Oi Oi","Boys Noize"],
-  ["The Choice Is Yours","Black Sheep"],
+  ["The Choice Is Yours","Black Sheep"], // incorrect in mag
   ["Rock Dat Body","Black Eyed Peas"],
   ["Sexy Bitch","David Guetta"],
   ["Black Dog","Led Zeppelin"],
@@ -73,3 +73,30 @@ addMultipleArtistList([
   ["Pon De Floor","Major Lazor"],
   ["I Gotta Feeling","Black Eyed Peas"]
   ], "Fergie & Apl.de.ap (Black Eyed Peas)", "Party Starters");
+
+addMultipleArtistList([
+  ["Stutter","Elastica"],
+  ["End Of A Century","Blur"],
+  ["Animal Nitrate","Suede"],
+  ["Lost Myself","Longpigs"],
+  ["Alright","Supergrass"],
+  ["Common People","Pulp"],
+  ["Kung Fu","Ash"],
+  ["Daydreamer","Menswear"],
+  ["12 Reasons Why","My Life Story"],
+  ["Find The Answer Within","The Boo Radleys"]
+  ], "Steve Lamacq", "Britpop");
+
+addMultipleArtistList([
+  ["Cry Baby","Janis Joplin"],
+  ["White Rabbit","Jefferson Airplane"],
+  ["Something's Got A Hold Of Me","Etta James"],
+  ["Cloudbusting","Kate Bush"],
+  ["Nightclubbing","Grace Jones"],
+  ["Ramalama","R—is’n Murphy"],
+  ["Earth Intruders","Bjšrk"],
+  ["Violet","Hole"],
+  ["Over And Over","Madonna"],
+  ["I'm Yr Here-I-Am", "Diane Cluck"]
+  ], "Steve Lamacq", "Britpop");
+
