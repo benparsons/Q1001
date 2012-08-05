@@ -1,1 +1,1 @@
-Insert some clever text here.\n
+In the September 2010 issue of Q magazine there was a feature titled "The Ultimate Playlist: 1001 Songs". While browsing this for ideas for what to listen to I realised it would be more useful as a grid, possibly as a spreadsheet. Then I realised I needed to look at using SlickGrid as a candidate project for work, and this would be an interesting dataset. Thus, this project has two simple goals: teach me about SlickGrid and produce a working grid of the data.
