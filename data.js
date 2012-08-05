@@ -1,25 +1,23 @@
 var data = [];
 var qnumber = 1;
-var beatles = ["Golden Slumbers", "Sexy Sadie", "For No One", "Magical Mystery Tour", "Cry Baby Cry",
-  "Taxman", "Strawberry Fields Forever", "Paperback Writer", "Here Comes The Sun", "Carry That Weight"];
 
-for (item in beatles) {
-  data.push({track: beatles[item], artist:"The Beatles", number:qnumber, selector: "Nicky Wire", group:"The Beatles"});
-  qnumber++;
+function addSingleArtistList(trackList, artistName, selector, group) {
+  for (item in trackList) {
+    data.push({track: trackList[item], artist:artistName, number:qnumber, selector: selector, group:group});
+    qnumber++;
+  }
 }
+
+// P66
+addSingleArtistList(["Golden Slumbers", "Sexy Sadie", "For No One", "Magical Mystery Tour", "Cry Baby Cry",
+  "Taxman", "Strawberry Fields Forever", "Paperback Writer", "Here Comes The Sun", "Carry That Weight"],
+  "The Beatles", "Nicky Wire", "The Beatles")
 /*
-data.push({track: "Golden Slumbers", artist:"The Beatles", number:1, selector: "Nicky Wire", group:"The Beatles"})
-data.push({track: "Sexy Sadie", artist:"The Beatles", number:2, selector: "Nicky Wire", group:"The Beatles"})
-*/
-/*
-for (var i = 0; i < 500; i++) {
-  data[i] = {
-    title: "Task " + i,
-    duration: "5 days",
-    percentComplete: Math.round(Math.random() * 100),
-    start: "01/01/2009",
-    finish: "01/05/2009",
-    effortDriven: (i % 5 == 0)
-  };
+// P67
+var dangermouse = [
+  ["One of these Days", "Pink Floyd"]
+  ];
+for (item in dangermouse) {
+    data.push({track});
 }
 */
