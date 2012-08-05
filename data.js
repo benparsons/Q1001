@@ -47,3 +47,29 @@ addMultipleArtistList([
   ["Flugufrelsarinn","Sigur R—s"],
   ["Three Days","Janes Addiction"]
   ], "Dave Gahan (Depeche Mode)", "My Playlist");
+  
+addMultipleArtistList([
+  ["April Skies","The Jesus & Mary Chain"],
+  ["Cheree","Suicide"],
+  ["Cherry-Coloured Funk","Cocteau Twins"],
+  ["Damaged Goods","Gang of Four"],
+  ["Forty-Five Hundred Times","Status Quo"],
+  ["Dark Entries","Bauhaus"],
+  ["Some Of Them Are Old","Brian Eno"],
+  ["Helicon 2","Mogwai"],
+  ["Theme For Great Cities","Simple Plan"],
+  ["Faith","The Cure"]
+  ], "Ian Rankin", "My Playlist");
+  
+addMultipleArtistList([
+  ["Kids","MGMT"],
+  ["Oi Oi Oi","Boys Noize"],
+  ["The Choice Is Yours","Black Sheep"],
+  ["Rock Dat Body","Black Eyed Peas"],
+  ["Sexy Bitch","David Guetta"],
+  ["Black Dog","Led Zeppelin"],
+  ["Scenario","A Tribe Called Quest"],
+  ["Sex On Fire","Kings Of Leon"],
+  ["Pon De Floor","Major Lazor"],
+  ["I Gotta Feeling","Black Eyed Peas"]
+  ], "Fergie & Apl.de.ap (Black Eyed Peas)", "Party Starters");
