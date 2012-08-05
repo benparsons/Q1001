@@ -9,7 +9,7 @@
 <script src="data.js" type="text/javascript"></script>
 </head>
 <body>
-      <div id="myGrid" style="width:600px;height:500px;"></div>
+      <div id="myGrid" style="width:800px;height:500px;"></div>
 <script>
   var grid;
   var columns = [
@@ -23,28 +23,30 @@
 
   var options = {
     enableCellNavigation: true,
-    enableColumnReorder: false
+    enableColumnReorder: false,
+    forceFitColumns: true
   };
-
-    $(function () {
-        grid = new Slick.Grid("#myGrid", data, columns, options);
-        grid.onSort.subscribe(function(e, args) {
-            
-        field = args.sortCol.field;
-        data.sort(function(a, b){
-            var result = 
-                a[field] > b[field] ? 1 :
-                a[field] < b[field] ? -1 :
-                0
-            ; 
-
-            return args.sortAsc ? result : -result;
-
-        });
+  
+  $(function () {
+    grid = new Slick.Grid("#myGrid", data, columns, options);
+    grid.onSort.subscribe(function(e, args) {
         
-        grid.setData(data);
-        grid.updateRowCount();
-        grid.render();
+    field = args.sortCol.field;
+    data.sort(function(a, b){
+        var result = 
+            a[field] > b[field] ? 1 :
+            a[field] < b[field] ? -1 :
+            0
+        ; 
+
+        return args.sortAsc ? result : -result;
+
+    });
+    
+    grid.setData(data);
+    grid.updateRowCount();
+
+    grid.render();
     
     });
       

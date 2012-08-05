@@ -35,3 +35,15 @@ addMultipleArtistList([
   ["Only Shallow", "My Bloody Valentine"]
   ], "Danger Mouse", "My Playlist");
 
+addMultipleArtistList([
+  ["Hang On To Your Ego","The Beach Boys"],
+  ["A Man Needs A Maid","Neil Young"],
+  ["Gimme Danger","Iggy And The Stooges"],
+  ["Moonage Daydream","David Bowie"],
+  ["I Fought The Law","The Clash"],
+  ["Hiding All Away","Nick Cave & The Bad Seeds"],
+  ["It Serves You Right To Suffer","John Lee Hooker"],
+  ["The Desperate Kingdom of Love","PJ Harvey"],
+  ["Flugufrelsarinn","Sigur R—s"],
+  ["Three Days","Janes Addiction"]
+  ], "Dave Gahan (Depeche Mode)", "My Playlist");
