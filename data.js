@@ -98,5 +98,5 @@ addMultipleArtistList([
   ["Violet","Hole"],
   ["Over And Over","Madonna"],
   ["I'm Yr Here-I-Am", "Diane Cluck"]
-  ], "Steve Lamacq", "Britpop");
+  ], "Florence Welch", "Female Icons");
 
