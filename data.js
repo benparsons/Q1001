@@ -3,14 +3,14 @@ var qnumber = 1;
 
 function addSingleArtistList(trackList, artistName, selector, group) {
   for (item in trackList) {
-    data.push({track: trackList[item], artist:artistName, number:qnumber, selector: selector, group:group});
+    data.push({track: trackList[item], artist:artistName, number:qnumber, selector: selector, group:group, id:qnumber});
     qnumber++;
   }
 }
 
 function addMultipleArtistList(trackList, selector, group) {
   for (item in trackList) {
-    data.push({track: trackList[item][0], artist: trackList[item][1], number:qnumber, selector:selector, group:group});
+    data.push({track: trackList[item][0], artist: trackList[item][1], number:qnumber, selector:selector, group:group, id:qnumber});
     qnumber++;
   }
     

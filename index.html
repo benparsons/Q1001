@@ -6,6 +6,7 @@
 <script src="jquery.event.drag-2.0.min.js" type="text/javascript"></script>
 <script src="slick.core.js" type="text/javascript"></script>
 <script src="slick.grid.js" type="text/javascript"></script>
+<script src="slick.dataview.js" type="text/javascript"></script>
 <script src="data.js" type="text/javascript"></script>
 </head>
 <body>
@@ -28,7 +29,12 @@
   };
   
   $(function () {
-    grid = new Slick.Grid("#myGrid", data, columns, options);
+    var dataView = new Slick.Data.DataView({ inlineFilters: true });
+      dataView.beginUpdate();
+  dataView.setItems(data);
+  dataView.endUpdate();
+
+    grid = new Slick.Grid("#myGrid", dataView, columns, options);
     grid.onSort.subscribe(function(e, args) {
         
     field = args.sortCol.field;
