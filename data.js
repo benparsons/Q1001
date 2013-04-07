@@ -100,3 +100,29 @@ addMultipleArtistList([
   ["I'm Yr Here-I-Am", "Diane Cluck"]
   ], "Florence Welch", "Female Icons");
 
+// P68
+addMultipleArtistList([
+  ["Streams of Whiskey","The Pogues"],
+  ["One Mint Julep","The Clovers"],
+  ["Tequila","The Champs"],
+  ["Quite Whiskey","Wynonie Harris"],
+  ["I Drink","Mary Gauthier"],
+  ["Whiskey in my Whiskey","The Felice Brothers"],
+  ["Drinking With Strangers","Jesse Sykes & The Sweet Hereafter"],
+  ["The Bottle","Gil Scott-Heron"],
+  ["The Bartender","Blake Shelton"],
+  ["When I Was Drinking","Hem"]
+  ], "Paul Heaton", "Drinking Songs")
+  
+addMultipleArtistList([
+  ["Baby Driver", "Simon & Garfunkel"],
+  ["Samba Pa Ti", "Santana"],
+  ["Stardust", "Nat King Cole"],
+  ["Stuck In The Middle With You", "Stealers Wheel"],
+  ["Love On The Rocks", "Neil Diamond"],
+  ["Rooms on Fire", "Stevie Nicks"],
+  ["The Crying Game", "Dave Berry"],
+  ["Two Out Of Three Ain't Bad","Meatloaf"],
+  ["With A Little Help From My Friends","Joe Cocker"],
+  ["Without You","Nilsson"],
+], "Terry Wogan", "My Playlist")
